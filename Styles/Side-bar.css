@@ -1,0 +1,93 @@
+@media(max-width: 1200px){
+    .side-bar{
+        position: fixed;
+        top: 55px;
+        bottom: 0;
+        left: 0;
+        width: 72px;
+        z-index: 200;
+        background-color: white;
+        padding-top: 5px;
+        }
+        .sidebar-link{
+            height: 74px;
+            /* background-color: lightgray; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .sidebar-link:hover{
+            background-color: rgb(238, 235, 235);
+        }
+        .sidebar-link img{
+        height: 24px;
+        }
+        .sidebar-link div{
+            margin-top: 4px;
+            font-size: 11px;
+        }
+}
+@media(min-width: 1200px){
+    .side-bar{
+        position: fixed;
+        top: 55px;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        z-index: 200;
+        background-color: white;
+        padding-top: 5px;
+        }
+        .sidebar-link{
+            height: 50px;
+            /* background-color: lightgray; */
+            display: flex;
+            /* flex-direction: row; */
+            justify-content:start;
+            align-items: start;
+            cursor: pointer;
+            /* padding: 14px; */
+        }
+        .sidebar-link:hover{
+            background-color: rgb(238, 235, 235);
+        }
+        .sidebar-link img{
+        height: 24px;
+        margin-top: 13px;
+        margin-left: 20px;
+        }
+        .sidebar-link div{
+            margin-top: 18px;
+            margin-left: 20px;
+            font-size: 11px;
+        }
+        body{
+            padding-left: 220px;
+        }
+}
+@media(max-width: 860px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width: 861px) and (max-width:1124px){
+.video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+@media(min-width: 1125px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media(min-width: 1000px){
+.video-title{
+    font-size: 16px;
+    line-height: 24px;
+}
+.video-author, .video-stats{
+    font-size: 14px;
+}
+}
